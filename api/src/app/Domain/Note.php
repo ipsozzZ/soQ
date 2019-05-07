@@ -209,7 +209,7 @@ class Note {
 	public function deleteByAdmin($userId = 1, $Id = 1){
 		$model = new ModelNote();
 		$notice = array(
-			'Status'   => 1,
+			'State'   => 0,
 			'Title'    => "违规笔记",
 			'Content'  => "出现违规痕迹,请重新整理你的笔记",
 			'Author'   => "Admin",
@@ -221,7 +221,7 @@ class Note {
 			return false;
 		}
 		$NModel = new Notice();
-		$nsql = $NModel -> insertOne($data);
+		$nsql = $NModel -> insertOne($notice);
 		return true;
 	}
 }

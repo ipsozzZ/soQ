@@ -260,7 +260,7 @@ class Mistake
 	public function deleteByAdmin($userId = 1, $Id = 1){
 		$model = new ModelMistake();
 		$notice = array(
-			'Status'   => 1,
+			'Status'   => 0,
 			'Title'    => "违规错题",
 			'Content'  => "出现违规痕迹,请重新整理你的错题",
 			'Author'   => "Admin",
@@ -272,7 +272,7 @@ class Mistake
 			return false;
 		}
 		$NModel = new Notice();
-		$nsql = $NModel -> insertOne($data);
+		$nsql = $NModel -> insertOne($notice);
 		return true;
 	}
 }

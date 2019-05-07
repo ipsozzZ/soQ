@@ -113,7 +113,7 @@ class Userelation extends Api{
 	}
 
 	/**
-	 * 获取测试数量
+	 * 获取班级数量
 	 */
 	public function getCount(){
 		$model = new Model();
@@ -122,7 +122,7 @@ class Userelation extends Api{
 	}
 
 	/**
-	 * 获取测试列表
+	 * 获取班级列表
 	 */
 	public function getList(){
 		$num = $this -> Number;
