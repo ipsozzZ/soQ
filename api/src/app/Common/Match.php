@@ -76,9 +76,8 @@ class Match
   public static function AllWordMatch($keys)
   {
     // $s = "%";
-   
-  
-    $keywords=Tools::ExtractKeyWords($keys);
+    $cid=Tools::judgeCategoryId($keys);
+    $keywords=Tools::ExtractKeyWords($keys,$cid);
     foreach($keywords as $word)
     {
       $pos=0;

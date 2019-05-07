@@ -97,8 +97,8 @@ class Upload extends Api
                     'type' => 'file',
                     'min' => 0,
                     'max' => 1024 * 1024 * 1024 * 200,
-                    // 'range' => array('video/eot-mp4','video/mp4'),
-                    // 'ext' => array('mp4', 'avi'),
+                    'range' => array('video/eot-mp4','video/mp4'),
+                    'ext' => array('mp4', 'avi'),
                     'desc'=>"视频文件"
                 ),
             ),

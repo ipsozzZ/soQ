@@ -25,21 +25,25 @@ class Question extends Api
                 'CategoryId' => array('name' => 'CategoryId', 'type' => 'int',  'desc' => '分类'),
                 'KeyWords' => array('name' => 'KeyWords',  'default' => "", 'desc' => '关键字'),
                 'Analysis' => array('name' => 'Analysis',  'desc' => '解析'),
-                'Text' => array('name' => 'Text',  'max' => 2000, 'desc' => '文本'),
+                'Text' => array('name' => 'Text',  'max' => 10000, 'desc' => '文本'),
                 'Type' => array('name' => 'Type',  'max' => 50, 'desc' => '题目类型'),
                 'Repetition'=>array('name' => 'Repetition','type'=>'float',
                 'default'=>0.95,'max'=>1,'min'=>0, 'desc' => '判重率，数据库内题目相似度大于该值则不添加'),
+                'AnswerVideo' => array('name' => 'AnswerVideo',"default"=>"0",  'desc' => '视频地址'),
+                'VideoCost' => array('name' => 'VideoCost', 'min'=>0, 'max' => 200,"default"=>0, 'desc' => '视频付费'),
             ),
             'update' => array(
                 'Id' => array('name' => 'Id', 'require' => true,  'desc' => '题目ID'),
                 'Content' => array('name' => 'Content', 'require' => true,  'desc' => '题目'),
                 'CategoryId' => array('name' => 'CategoryId', 'type' => 'int',  'desc' => '分类'),
                 'Analysis' => array('name' => 'Analysis',  'desc' => '解析'),
-                'Text' => array('name' => 'Text',  'max' => 2000, 'desc' => '文本'),
+                'Text' => array('name' => 'Text',  'max' => 10000, 'desc' => '文本'),
                 'Type' => array('name' => 'Type',  'max' => 50, 'desc' => '题目类型'),
+                'AnswerVideo' => array('name' => 'AnswerVideo',"default"=>"0",  'desc' => '视频地址'),
+                'VideoCost' => array('name' => 'VideoCost', 'min'=>0, 'max' => 200,"default"=>0, 'desc' => '视频付费'),
             ),
             'search' => array(
-                'Text' => array('name' => 'Text', 'require' => true, 'max' => 2000, 'desc' => '文本'),
+                'Text' => array('name' => 'Text', 'require' => true, 'max' => 10000, 'desc' => '文本'),
                 'Num' => array('name' => 'Num', 'default' => 3, 'desc' => '匹配n个')
             ),
             'searchs'=>array(
@@ -62,7 +66,7 @@ class Question extends Api
             ),
             'getQuestionsByText' => array(
                 'UserId' => array('name' => 'UserId', 'require' => true, 'desc' => "用户id"),
-                'Text' => array('name' => 'Text', 'require' => true, 'max' => 2000, 'desc' => '文本'),
+                'Text' => array('name' => 'Text', 'require' => true, 'max' => 10000, 'desc' => '文本'),
                 'Number'  => array('name' => 'Number', 'default' => 4, 'desc' => '需要的数量'),
             ),
             'deleteQuestionByIds' => array(
@@ -93,8 +97,10 @@ class Question extends Api
             'CategoryId' => $this->CategoryId,
             'KeyWords' => $this->KeyWords,
             'Analysis' => $this->Analysis,
-            'Text' => $this->Text,
-            'Type' => $this->Type
+            'Text' => " ".$this->Text." ",
+            'Type' => $this->Type,
+            "AnswerVideo"=>$this->AnswerVideo,
+            "VideoCost"=>$this->VideoCost
         );
      
         $domain = new DomainUpload();
@@ -191,7 +197,7 @@ class Question extends Api
         return MyStandard::gReturn(0, $re);
     }
 
-
+    
 
     /* -------------   ipso  -------------- */
 
@@ -221,7 +227,9 @@ class Question extends Api
             'CategoryId' => $this->CategoryId,
             'Analysis'   => $this->Analysis,
             'Text'       => $this->Text,
-            'Type'       => $this->Type
+            'Type'       => $this->Type,
+            'AnswerVideo' => $this->AnswerVideo,
+            'VideoCost' => $this->VideoCost
         );
         $domain = new DomainBasic();
         $res = $domain->updateQuestion($Id, $newData);

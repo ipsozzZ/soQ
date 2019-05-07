@@ -24,7 +24,9 @@ class Mistake extends Api
         'Correct' => array('name' => 'Correct', 'default' => ' ', 'desc' => '错题整理'),
         'QuestionContent' => array('name' => 'QuestionContent', 'default' => '', 'desc' => '题目内容'),
         'MistakeCateId'  => array('name' => 'MistakeCateId', 'require' => true, 'min' => 1, 'desc' => '错题分类'),
-        'StandTime' => array('name' => 'StandTime', 'default' => 0, 'desc' => '停留时间')
+        'StandTime' => array('name' => 'StandTime', 'default' => 0, 'desc' => '停留时间'),
+        'AnswerVideo' => array('name' => 'AnswerVideo',"default"=>"0",  'desc' => '视频地址'),
+        'VideoCost' => array('name' => 'VideoCost', 'min'=>0, 'max' => 200,"default"=>0, 'desc' => '视频付费'),
       ),
       'update' => array(
         'UserId' => array('name' => 'UserId', 'require' => true, 'min' => 1, 'desc' => 'user id'),
@@ -32,7 +34,10 @@ class Mistake extends Api
         'Correct' => array('name' => 'Correct', 'desc' => '错题整理'),
         'QuestionContent' => array('name' => 'QuestionContent', 'desc' => '题目内容'),
         'MistakeCateId'  => array('name' => 'MistakeCateId',   'desc' => '错题分类'),
-        'StandTime' => array('name' => 'StandTime', 'default' => 0, 'desc' => '停留时间')
+        'StandTime' => array('name' => 'StandTime', 'default' => 0, 'desc' => '停留时间'),
+        'AnswerVideo' => array('name' => 'AnswerVideo',"default"=>"0",  'desc' => '视频地址'),
+        'VideoCost' => array('name' => 'VideoCost', 'min'=>0, 'max' => 200,"default"=>0, 'desc' => '视频付费'),
+      
       ),
       'getByQuestionId' => array(
         'qid'  => array('name' => 'QuestionId', 'require' => true, 'min' => 1, 'desc' => '题目id'),
@@ -111,6 +116,8 @@ class Mistake extends Api
     if ($this->Correct) $data["Correct"] = $this->Correct;
     if ($this->QuestionContent) $data["QuestionContent"] = $this->QuestionContent;
     if ($this->MistakeCateId) $data["MistakeCateId"] = $this->MistakeCateId;
+    if ($this->AnswerVideo&&$this->AnswerVideo!="0") $data["AnswerVideo"]=$this->AnswerVideo;
+    if ($this->VideoCost) $data["VideoCost"]=$this->VideoCost;
 
     $dm = new DomainMistake();
     $re = $dm->updateMistake($data, $this->StandTime);
@@ -131,6 +138,8 @@ class Mistake extends Api
       'Correct' => $this->Correct,
       'QuestionContent' => $this->QuestionContent,
       'MistakeCateId'  => $this->MistakeCateId,
+      "AnswerVideo"=>$this->AnswerVideo,
+      "VideoCost"=>$this->VideoCost
     );
     $dm = new DomainMistake();
     $re = $dm->addMistake($data, $this->StandTime);

@@ -43,6 +43,7 @@ class Keyword extends Api
 				'Page' => array('name' => 'Page', 'desc' => ''),
 				'Number' => array('name' => 'Number', 'desc' => '关键字Id'),
 			),
+		
     );
   }
   /**
@@ -60,6 +61,7 @@ class Keyword extends Api
     $re = $dm->addKeyword($data);
     return MyStandard::gReturn(0, $re);
 	}
+
 	
 
 	/* --------------   ipso   ----------------- */

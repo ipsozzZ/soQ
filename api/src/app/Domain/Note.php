@@ -50,9 +50,10 @@ class Note {
 		/**
 		 * 更具关键字Id查找用户笔记
 		 */
-		public function getNotesByKeyId($uid,$cid=0,$kid)
+		public function getNotesByKeyIds($uid,$cid=0,$kid)
 		{
 			$m=new ModelNote();
+			if($kid=="") return $m->getNotesByCateId($cid,$uid);
 			$data=$m->getBykeyId($uid,$cid,$kid);
 			return $data;
 		}
@@ -63,6 +64,7 @@ class Note {
 		 * 
 		 */
 		public function add($data){
+			// $cid=Tools::judgeCategoryId($keys);
 			$keys = Tools::ExtractKeyWords($data["Content"].$data["Headline"]);
 			$data["KeyWords"]=implode(",",Tools::GetValueByKey($keys,"Id"));
 			$data["KeysWeight"]=implode(",",Tools::GetValueByKey($keys,"Weight"));

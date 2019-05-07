@@ -22,8 +22,9 @@ class Basic
    */
   public static function searchQuestion($q,$num=3)
   {
+		$cid=Tools::judgeCategoryId($q["Text"]);
+		$keys=Tools::ExtractKeyWords($q["Text"],$cid);// 先找keyword 后处理
 		$q["Text"]=Tools::handleQuestionText($q["Text"]); //去除不必要的字符
-    $keys=Tools::ExtractKeyWords($q["Text"]);
    
     $qs=CommonMatch::GetQuestionsByKeyWord($keys,$num*2);
  
@@ -41,9 +42,11 @@ class Basic
 		$re=array();
 		for($i=0;$i<count($texts);$i++)
 		{
+			$cid=Tools::judgeCategoryId($texts[$i]);
+			$keys=Tools::ExtractKeyWords($texts[$i],$cid);  // 先找keyword 后处理
 			$texts[$i]=Tools::handleQuestionText($texts[$i]); //去除不必要的字符
 			$q=array("Text"=>$texts[$i]);
-			$keys=Tools::ExtractKeyWords($texts[$i]);
+		
 			$qs=CommonMatch::GetQuestionsByKeyWord($keys,6,$aq,false);
 			$re[$i]=CommonMatch::qLevenShtein($q,$qs,1);
 		}
@@ -54,8 +57,8 @@ class Basic
    */
   public static function matchQuestion($text,$uid,$num=4)
   {
-   
-    $keys=Tools::ExtractKeyWords($text);
+		$cid=Tools::judgeCategoryId($text);
+    $keys=Tools::ExtractKeyWords($text,$cid);
     $qs=QTools::deleteQuestionsForUser($uid);//去除用户已经操作（收藏、错题整理等）部分
 
     $qs=CommonMatch::GetQuestionsByKeyWord($keys,$num*2,$qs);

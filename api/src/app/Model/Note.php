@@ -104,19 +104,21 @@ class Note extends NotORM
     }
 
     /**
-     * 更具关键字Id查找用户分类中所有笔记
+     * 根据多个关键字Id查找用户分类中所有笔记
+     * @param kid 1,2,3
      */
     public function getBykeyId($uid,$cid=0,$kid)
     {
+
         $kid='%,'.$kid.',%';
-        $command = 'select Id,Headline,Content,NoteCategoryId,DateTime,KeyWords from note where UserId=:uid and concat(",",KeyWords,",") like :kid';
+        $command = 'select Id,Headline,Content,NoteCategoryId,DateTime,KeyWords from note where UserId=:uid and concat("%,",KeyWords,",%") like :kid';
        
         $params = array(
             ':uid' => $uid,
             ':kid'=>$kid,
             );
         if($cid!=0) {
-            $command=$command."and NoteCategoryId = :cid";
+            $command=$command." and NoteCategoryId = :cid";
             $params[":cid"]=$cid;
         }
         return  $this->getORM()->queryAll($command,$params);    

@@ -12,18 +12,20 @@ class  Tools
 {
   /** 
      * 关键字提取并根据出现次数和权值排序 静态方法 "::"调用
-     * @param $text 待提取的文字
+     * @param text 待提取的文字
+     * @param cid 分类Id 物理为10，英语为20 .默认为物理
      * @return array 关键字Id、Word、权重数组（从大到小排序后）
      */
-  public static function ExtractKeyWords($text)
+  public static function ExtractKeyWords($text,$cid=10)
   {
-    $kw = new KeyWord();
 
+    $kw = new KeyWord();
     // 数据库查询语句，判断题目中存在的关键字
-    $keyarr = $kw->gesKeyWordsByWords($text);
- 
+    $keyarr = $kw->gesKeyWordsByWords($text,$cid);
+    
     for ($i = 0; $i < count($keyarr); $i++) {
-      $cnt = substr_count($text, $keyarr[$i]['Word']);
+      $cnt = substr_count(strtolower($text), strtolower($keyarr[$i]['Word']));
+      $cnt=$cnt>0?$cnt:1;
       $keyarr[$i]["Weight"] = $keyarr[$i]["Weight"] * $cnt;
     }
 
@@ -189,5 +191,47 @@ class  Tools
       }
     }
     return $arr;
+  }
+  /**
+   * 判断是否为英文题目
+   * @param ratio 英语字符占比（数字、英语字符、中文字符）默认达到0.8便为英语题目 
+   */
+  public static function judgeEnglish($text,$ratio=0.8)
+  {
+    $arrNum=array();
+    $arrCh=array();
+    $arrAl=array();
+    preg_match_all("/[0-9]{1}/",$text,$arrNum);
+    preg_match_all("/[a-zA-Z]{1}/",$text,$arrAl);
+    preg_match_all("/([\x{4e00}-\x{9fa5}]){1}/u",$text,$arrCh);
+    $data=array(
+      "num"=>Tools::Count2Array($arrNum),
+      "eng"=>Tools::Count2Array($arrAl),
+      "ch"=>Tools::Count2Array($arrCh),
+      'cht'=>$arrCh,
+      'engt'=>$arrAl
+    );
+   
+    return $data["eng"]/($data["eng"]+$data["ch"]+$data["num"]) > $ratio;
+  }
+  /**
+   * 统计二维数组内元素个数 针对与 judgeEnglish方法
+   */
+  public static function Count2Array($arr)
+  {
+    $cnt=0;
+    for($i=0;$i<count($arr);$i++)
+    {
+      $t=count($arr[$i]);
+      $cnt=$t>$cnt?$t:$cnt;
+    }
+    return $cnt;
+  }
+   /**
+   * 判断文本分类
+   */
+  public static function judgeCategoryId($text)
+  {
+    return Tools::judgeEnglish($text) ? 20 : 10;
   }
 }
