@@ -7,6 +7,7 @@ import requests
 import base64
 from io import BytesIO
 
+access_token="24.29a35fb9c34a6f43f1b226321f16d21a.2592000.1559871249.282335-15879343"
 # 文字识别 传入 PIL的Img 和 识别语言
 
 def tesseract_ocr(img, lang='chi_sim'):
@@ -29,7 +30,7 @@ def get_baidu_token():
 
 
 def baidu_orc(path):
-    access_token = "24.607dbc19903a32f5e7fde1932acf6c38.2592000.1556360828.282335-15879343"  # 自行注册百度云账号，即可获取自己专属的access_token，必须输入！
+    #access_token = "24.607dbc19903a32f5e7fde1932acf6c38.2592000.1556360828.282335-15879343"  # 自行注册百度云账号，即可获取自己专属的access_token，必须输入！
     # print(time.time())
     with open(path, 'rb') as f:
         image_data = f.read()
@@ -61,7 +62,7 @@ def pil_base64(image):
 
 # PIL
 def baidu_orc_pil(img):# 较直接使用文件路径慢半秒
-    access_token = "24.607dbc19903a32f5e7fde1932acf6c38.2592000.1556360828.282335-15879343"  # 自行注册百度云账号，即可获取自己专属的access_token，必须输入！
+    #access_token = "24.607dbc19903a32f5e7fde1932acf6c38.2592000.1556360828.282335-15879343"  # 自行注册百度云账号，即可获取自己专属的access_token，必须输入！
     print(time.time())
     base64_ima = pil_base64(img)
     print(time.time())

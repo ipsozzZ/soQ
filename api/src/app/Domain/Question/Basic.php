@@ -25,9 +25,13 @@ class Basic
 		$cid=Tools::judgeCategoryId($q["Text"]);
 		$keys=Tools::ExtractKeyWords($q["Text"],$cid);// 先找keyword 后处理
 		$q["Text"]=Tools::handleQuestionText($q["Text"]); //去除不必要的字符
-   
-    $qs=CommonMatch::GetQuestionsByKeyWord($keys,$num*2);
- 
+		$qm=new ModelSearchQ();
+		$qs=$qm->mGetQuestionsByCategoryId($cid);
+		$qs=$qm->mreduceQuestion($qs,$q["Text"]);// 去除一些太长 或 太短的题目
+
+
+    $qs=CommonMatch::GetQuestionsByKeyWord($keys,$num*2,$qs);
+		return $qs;
     return CommonMatch::qLevenShtein($q,$qs,$num);
   }
 	/**

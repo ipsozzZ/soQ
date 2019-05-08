@@ -128,12 +128,15 @@ class Match
     $msq=new ModelSearchQ();
     if ($questions == null) $questions = $msq->mgetAllQuestion();
     if ($num == null || $num < 1) $num = 3;
-
+  
     if ($keywords) {
       $keyarr = Match::merageArray($keywords);
       if($isorm) $questions = $questions->where("NOT KeyWords","")->fetchAll(); //抓取所有
+      
       $cos = new Cosines();
       $len=count($questions);
+      
+      // $questions=$questions->select("KeyWords,KeysWeight,Id,Text")->fetchAll();
       for ($i = 0; $i < $len; $i++) {
         $temp = array(
           "Keys" => $questions[$i]["KeyWords"]==""?[]:explode(",", $questions[$i]["KeyWords"]),

@@ -37,7 +37,7 @@ class CutQuestion
 
     $cmd = "python " .  $py_path . " {$img_path}";
     $reslut = [];
-
+  
     exec($cmd, $reslut);// exce 运行命令行需要启动 3s时间较长
 
     $re=[];

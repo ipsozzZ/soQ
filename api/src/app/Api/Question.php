@@ -133,6 +133,7 @@ class Question extends Api
     public function search()
     {
         $q = array('Text' => $this->Text);
+        
         $reslut = DomainBasic::searchQuestion($q, $this->Num); //查找前三个
         return MyStandard::gReturn(0, $reslut);
     }
