@@ -79,6 +79,7 @@ class Note extends Api
 			'getKeysByUser'=>array(
 				'UserId' => array('name' => 'UserId', 'require' => true, 'min' => 1, 'desc' => 'user id'),
 				'NoteCategoryId' => array('name' => 'NoteCategoryId', 'default'=>0, 'desc' => '分类Id'),
+				'Number' => array('name' => 'Number',  'default' => 4, 'desc' => '获取标签数量，默认推送输入数量+最近上传笔记中最大weight一个'),
 			),
 			'notesByKeyIds'=>array(
 				'UserId' => array('name' => 'UserId', 'require' => true, 'min' => 1, 'desc' => 'user id'),
@@ -248,7 +249,7 @@ class Note extends Api
 	 */
 	public function getKeysByUser(){
 		$domain = new DomainNote();
-		$re = $domain->getKeysByUserNotes($this->UserId,$this->NoteCategoryId);
+		$re = $domain->getKeysByUserNotes($this->UserId,$this->NoteCategoryId,$this->Number);
 		return MyStandard::gReturn(0, $re);
 	}
 	/* ----------------  ipso  ---------------- */

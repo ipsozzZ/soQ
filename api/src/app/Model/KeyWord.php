@@ -40,7 +40,7 @@ class KeyWord extends NotORM
 
     $arr = explode(",", $idarr);
 
-    return $this->getORM()->where("Id", $arr)->fetchAll();
+    return $this->getORM()->where("Id", $arr)->order('Id DESC')->fetchAll();
   }
   /**
    * 根据KeyWord字段得到关键字信息

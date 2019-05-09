@@ -6,6 +6,6 @@ gitc
 .idea/
 .env
 .zip
-vendor/*
+
 
 node_modules/*
