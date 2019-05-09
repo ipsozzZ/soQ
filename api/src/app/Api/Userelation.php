@@ -52,7 +52,10 @@ class Userelation extends Api{
 			),
 			'getUsersById'=>array(
 				'Id' => array('name' => 'Id',  'require' => true,'desc' => '班级Id'),
-			)
+			),
+			'getById'=>array(
+				'Id' => array('name' => 'Id',  'require' => true,'desc' => '班级Id'),
+			),
 		);
 	}
 
@@ -135,6 +138,21 @@ class Userelation extends Api{
 		}
 		return MyStandard::gReturn(0, $list, '获取成功');
 	}
+
+	/**
+	 * 根据班级Id获取班级信息
+	 */
+	public function getById(){
+		$model = new Model();
+		$Id = $this -> Id;
+		$class = $model -> getById($Id);
+		if(!$class){
+			return MyStandard::gReturn(1, '', '获取失败');
+		}
+		return MyStandard::gReturn(0, $class, '获取成功');
+	}
+
+
 	/**
 	 * 通过老师Id 获取班课列表
 	 */
