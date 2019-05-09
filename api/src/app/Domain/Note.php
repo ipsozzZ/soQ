@@ -152,11 +152,12 @@ class Note {
 			return $mn->deleteCate($data["UserId"],$data["Id"]);
 		}
 		/**
-		 * 获取用户笔记的所有关键字
+		 * 获取用户笔记的所有关键字，选择最近一个笔记中权重最大的标签为首位，其他的为weight*count排序
 		 * @param id 用户id
 		 * @param cid 用户笔记分类id
+		 * @param num 获取用户多少个标签
 		 */
-		public function getKeysByUserNotes($id,$cid=0){
+		public function getKeysByUserNotes($id,$cid=0,$num=4){
 			$arr=$this->getNotesByCateId($cid,$id,0,0); // 获取用户所有笔记
 			$keys=Tools::GetValueByKey($arr,"KeyWords");
 			$temp="";
@@ -181,23 +182,46 @@ class Note {
 			$km=new ModelKeyWord();
 			$data=$km->gesKeyWordsByIds($temp);// 获取所有的keys
 		
+			$cnt=0;
 			for($i=1;$i<strlen($temp);$i++) //统计数量
 			{
 				$t=$i;
 				while($i<strlen($temp)&&$temp[$i]!=","){
 					$i++;
 				}
+			
 				$subtemp=substr($temp,$t,$i-$t);
 				for($j=0;$j<count($data);$j++)
 				{
 					if($subtemp==$data[$j]["Id"])
 					{
-						if(array_key_exists("Count",$data[$j])) $data[$j]["Count"]++;
-						else $data[$j]["Count"]=1;
+						if(array_key_exists("Count",$data[$j])) 
+						{
+							$data[$j]["Count"]++;
+						}
+						else{
+							$data[$j]["Count"]=1;
+							if($cnt==0) //第一个单独出来
+							{
+								$cnt=1;
+								$tempj=$data[$j];
+								unset($data[$j]);
+								$data = array_merge($data);//重置索引
+							}
+						}
+						break;
 					}
 				}
 			}
+			for($j=0;$j<count($data);$j++) //获取大小顺序
+			{
+				$data[$j]["Weight"]=$data[$j]["Count"]*$data[$j]["Weight"];
+			}
+			// Tools::SortByKey($data,"Count",false);
+	
+			$data=Tools::GetMaxArray($data,"Weight",$num); 
 			Tools::unsetKeys($data,"Weight");
+			array_unshift($data,$tempj); //push_front 
 			return $data;
 		}
 
