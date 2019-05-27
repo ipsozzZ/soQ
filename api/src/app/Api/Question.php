@@ -8,7 +8,7 @@ use App\Common\MyStandard;
 use App\Domain\Question\Basic as DomainBasic;
 use App\Domain\Question\Recommend as DomainRecommend;
 use App\Common\Tools;
-
+use App\Model\Question\Search as ModelSearchQ;
 /**
  * 题目的基本操作示例
  * @author goodtimp 20190313
@@ -47,7 +47,7 @@ class Question extends Api
                 'Num' => array('name' => 'Num', 'default' => 3, 'desc' => '匹配n个')
             ),
             'searchs'=>array(
-                'Texts' => array('name' => 'Texts', 'type' => 'array','format' => 'json', 'require' => true, 'desc' => '文本数组'),
+                'Texts' => array('name' => 'Texts', 'type' => 'array','require' => true,'format' => 'json', 'desc' => '文本数组'),
             ),
             'getById' => array(
                 'UserId' => array('name' => 'UserId', 'default' => 0, 'require' => false, 'desc' => "用户id"),
@@ -143,8 +143,10 @@ class Question extends Api
      * @return 返回题目列表
      */
     public function searchs(){
-        $ts=$this->Texts;
-
+        $ts=$this->Texts; 
+        // $qm=new ModelSearchQ();
+        // return $qm->getQuestionsByCategoryId($this->Id);
+	
         $reslut=DomainBasic::searchQuestions($ts);
         return MyStandard::gReturn(0, $reslut);
     }

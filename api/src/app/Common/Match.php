@@ -17,6 +17,7 @@ class Match
   */
   public static function levenShtein($str1, $str2)
   {
+    $str1=substr($str1,0,1000);
     //计算两个字符串的长度。  
     $len1 = strlen($str1);
     $len2 = strlen($str2);
@@ -112,6 +113,7 @@ class Match
       $temp=$reslut;
       $reslut=str_replace("%%","%",$reslut);
     }
+    $reslut=str_replace(" ","",$reslut); //去除空格影响
     return $reslut;
   }
 

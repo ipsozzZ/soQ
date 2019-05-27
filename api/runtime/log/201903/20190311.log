@@ -1,0 +1,11 @@
+2019-03-11 13:20:12|ERROR|App.Collection.Add|PDOException: Unknown column 'Behavior' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO in...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Interest.php(39): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Collection.php(58): App\Model\Interest->addInterest(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Collection.php(48): App\Domain\Collection->add(Array, '0')
+#5 [internal function]: App\Api\Collection->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}

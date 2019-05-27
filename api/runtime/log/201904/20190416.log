@@ -1,0 +1,189 @@
+2019-04-16 19:05:01|ERROR|App.Test.GetAllByTeacher|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM t...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(30): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(139): App\Model\Test->getByTid('5', -5, '5')
+#4 [internal function]: App\Api\Test->getAllByTeacher()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 19:31:56|ERROR|App.Userelation.AddSid|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '8,9 WHERE (Id = '1')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(417): NotORM_Result->query('UPDATE userelat...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Userelation.php(56): NotORM_Result->update(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Userelation.php(10): App\Model\Userelation->addSid('1', '7,8,9')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Userelation.php(142): App\Domain\Userelation->addSid('1', '7,8,9')
+#4 [internal function]: App\Api\Userelation->addSid()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 19:34:43|ERROR|App.Test.GetAllByTeacher|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM t...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(30): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(139): App\Model\Test->getByTid('2', -5, '5')
+#4 [internal function]: App\Api\Test->getAllByTeacher()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 19:34:46|ERROR|App.Test.GetAllByTeacher|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM t...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(30): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(139): App\Model\Test->getByTid('2', -5, '5')
+#4 [internal function]: App\Api\Test->getAllByTeacher()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 19:38:59|ERROR|App.Test.GetAllByTeacher|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM t...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(30): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(139): App\Model\Test->getByTid('2', -5, '5')
+#4 [internal function]: App\Api\Test->getAllByTeacher()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 19:43:32|ERROR|App.Test.GetAllByTeacher|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM t...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(30): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(139): App\Model\Test->getByTid('2', -5, '5')
+#4 [internal function]: App\Api\Test->getAllByTeacher()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 19:43:34|ERROR|App.Test.GetAllByTeacher|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM t...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(30): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(139): App\Model\Test->getByTid('2', -5, '5')
+#4 [internal function]: App\Api\Test->getAllByTeacher()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 19:44:23|ERROR|App.Test.GetAllByTeacher|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM t...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(30): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(139): App\Model\Test->getByTid('2', -5, '5')
+#4 [internal function]: App\Api\Test->getAllByTeacher()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 19:44:50|ERROR|App.Test.GetAllByTeacher|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM t...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(30): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(139): App\Model\Test->getByTid('2', -5, '5')
+#4 [internal function]: App\Api\Test->getAllByTeacher()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-16 20:00:33|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'2'% ORDER BY Ctime[DESC]' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(32): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(19): App\Model\Notice->getReadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(136): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-16 20:01:54|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'2'% ORDER BY Ctime[DESC]' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(32): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(19): App\Model\Notice->getReadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(136): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-16 20:02:06|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'2'% ORDER BY Ctime[DESC]' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(39): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(20): App\Model\Notice->getUnreadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(136): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-16 20:03:04|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%2% ORDER BY Ctime[DESC]' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(33): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(19): App\Model\Notice->getReadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(136): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-16 20:03:21|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%2% ORDER BY Ctime [DESC]' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(33): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(19): App\Model\Notice->getReadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(136): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-16 20:03:31|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%2%' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(33): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(19): App\Model\Notice->getReadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(136): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-16 20:04:51|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[DESC]' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(33): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(19): App\Model\Notice->getReadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(136): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-16 20:05:02|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[DESC]' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(33): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(19): App\Model\Notice->getReadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(136): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-16 21:17:20|ERROR|App.Notice.GetByUserId|PDOException: Unknown column 'UnreadId' in 'where clause' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(40): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(20): App\Model\Notice->getUnreadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(141): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}

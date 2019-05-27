@@ -1,0 +1,50 @@
+2019-04-18 12:40:45|ERROR|App.Notice.GetByUserId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%,2,% ORDER BY Ctime DESC' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT Id,Conte...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT Id,Conte...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notice.php(32): NotORM_Result->queryAll('SELECT Id,Conte...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Notice.php(19): App\Model\Notice->getReadByUserId('2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Notice.php(141): App\Domain\Notice->getByUserId('2')
+#5 [internal function]: App\Api\Notice->getByUserId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-04-18 12:48:51|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/8711461555562931.png
+2019-04-18 12:49:38|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/9381761555562978.png
+2019-04-18 12:50:33|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/3562591555563033.png
+2019-04-18 12:58:29|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/11174661555563509.png
+2019-04-18 12:58:33|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/4152461555563513.png
+2019-04-18 12:59:26|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/3723421555563566.png
+2019-04-18 13:00:06|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/10794911555563606.png
+2019-04-18 13:00:15|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/3544401555563615.png
+2019-04-18 13:00:26|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/6164691555563626.png
+2019-04-18 13:06:00|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/2290071555563959.png
+2019-04-18 13:06:33|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/4300291555563993.png
+2019-04-18 13:07:28|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/8836171555564048.png
+2019-04-18 13:07:30|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/10574921555564050.png
+2019-04-18 13:09:16|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/7918711555564156.png
+2019-04-18 13:09:19|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/7316031555564159.png
+2019-04-18 13:09:25|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/2742451555564165.png
+2019-04-18 13:09:28|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/2949861555564168.png
+2019-04-18 13:10:53|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/9834111555564253.png
+2019-04-18 13:14:46|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/2937441555564486.png
+2019-04-18 13:17:25|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/11082931555564645.png
+2019-04-18 13:17:42|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/7969551555564662.png
+2019-04-18 13:18:19|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/12669491555564699.png
+2019-04-18 13:23:30|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/11078151555565010.png
+2019-04-18 13:23:39|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/12103411555565019.png
+2019-04-18 13:23:51|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/5777031555565031.png
+2019-04-18 13:24:19|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/7068061555565059.png
+2019-04-18 13:25:44|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/6288541555565144.png
+2019-04-18 13:26:50|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/3005991555565210.png
+2019-04-18 13:26:52|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/8622371555565212.png
+2019-04-18 13:29:00|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/4931061555565340.png
+2019-04-18 13:30:27|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/5022281555565427.png
+2019-04-18 13:31:27|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/9726101555565486.png
+2019-04-18 13:34:10|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/2695171555565650.png
+2019-04-18 15:27:03|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/7121621555572423.png
+2019-04-18 15:31:05|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/4135061555572665.png
+2019-04-18 15:33:18|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/13043111555572798.png
+2019-04-18 15:36:07|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/3982571555572967.png
+2019-04-18 19:47:04|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/10575211555588023.png
+2019-04-18 19:48:15|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/04/18/6126011555588095.png

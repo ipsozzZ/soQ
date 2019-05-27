@@ -1,0 +1,11 @@
+2019-04-17 14:59:04|ERROR|App.Test.Add|PDOException: Column 'UserrelationId' cannot be null in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO te...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Test.php(40): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Test.php(36): App\Model\Test->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Test.php(76): App\Domain\Test->add(Array)
+#5 [internal function]: App\Api\Test->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}

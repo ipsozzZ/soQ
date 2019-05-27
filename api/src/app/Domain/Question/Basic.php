@@ -29,9 +29,7 @@ class Basic
 		$qs=$qm->mGetQuestionsByCategoryId($cid);
 		$qs=$qm->mreduceQuestion($qs,$q["Text"]);// 去除一些太长 或 太短的题目
 
-
     $qs=CommonMatch::GetQuestionsByKeyWord($keys,$num*2,$qs);
-		return $qs;
     return CommonMatch::qLevenShtein($q,$qs,$num);
   }
 	/**
@@ -41,9 +39,22 @@ class Basic
   public static function searchQuestions($texts)
   {
 		$qm=new ModelSearchQ();
-		$aq=$qm->getAllQuestion();
+		$carry=[];
+		$cid=10;
+		for($i=0;$i<count($texts);$i++) //获得题目分类出现最多的
+		{
+			$cid=Tools::judgeCategoryId($texts[$i]);
+			for($j=0;$j<count($carry);$j++)
+				if($cid==$carry[$j]["Id"]) break;
+			if($j==count($carry)) $carry[$j]=array("Id"=>$cid,"Cnt"=>1);
+			$carry[$j]["Cnt"]++;
+		}
+		Tools::SortByKey($carry,"Cnt");
+		$cid=$carry[0]["Id"];
+	   
+		$aq=$qm->getQuestionsByCategoryId($cid);
 	
-		$re=array();
+		
 		for($i=0;$i<count($texts);$i++)
 		{
 			$cid=Tools::judgeCategoryId($texts[$i]);
@@ -98,7 +109,7 @@ class Basic
       return $re;
     }
     $keys=CommonMatch::AllWordMatch($keys);
- 
+	
   
     return $qm->getQuestionsByKeys($keys,$cid,$min,$num);
   }

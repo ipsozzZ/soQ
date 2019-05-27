@@ -1,0 +1,27 @@
+2019-05-08 09:37:31|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/05/08/6250451557279450.jpg
+2019-05-08 09:37:44|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/05/08/12421051557279464.jpg
+2019-05-08 09:55:09|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/05/08/4038671557280509.jpg
+2019-05-08 09:57:40|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/05/08/6699231557280659.jpg
+2019-05-08 09:57:58|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/05/08/6878331557280678.jpg
+2019-05-08 09:59:28|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload//cut/2019/05/08/6470311557280767.jpg
+2019-05-08 11:00:44|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 246)' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(807): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(819): NotORM_Result->aggregation('COUNT(*)')
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(32): NotORM_Result->count()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(137): App\Domain\Question\Basic::searchQuestion(Array, '3')
+#4 [internal function]: App\Api\Question->search()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(16): PhalApi\PhalApi->response()
+#7 {main}
+2019-05-08 11:02:52|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 246)' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(807): NotORM_Result->query('SELECT COUNT(*)...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(819): NotORM_Result->aggregation('COUNT(*)')
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(32): NotORM_Result->count()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(137): App\Domain\Question\Basic::searchQuestion(Array, '3')
+#4 [internal function]: App\Api\Question->search()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(16): PhalApi\PhalApi->response()
+#7 {main}
+2019-05-08 16:53:28|ERROR|AliyunOss \ file not exists

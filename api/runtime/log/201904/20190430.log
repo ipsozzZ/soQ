@@ -1,0 +1,133 @@
+2019-04-30 13:32:00|ERROR|AliyunOss \ uploadFile|"Array" object name is invalid
+2019-04-30 13:32:06|ERROR|AliyunOss \ uploadFile|"Array" object name is invalid
+2019-04-30 13:45:37|ERROR|AliyunOss \ file not exists|test.png
+2019-04-30 13:49:40|ERROR|AliyunOss \ file not exists|test.png
+2019-04-30 13:50:28|ERROR|AliyunOss \ file not exists|{"name":"pan_1920_1080(3).png","type":"image\/png","tmp_name":"C:\\Windows\\phpF61F.tmp","error":0,"size":269238}
+2019-04-30 14:01:38|ERROR|AliyunOss \ uploadFile|bucket is not allowed empty
+2019-04-30 14:03:27|ERROR|AliyunOss \ uploadFile|"/test.png" object name is invalid
+2019-04-30 14:04:49|ERROR|AliyunOss \ uploadFile|"/test.png" object name is invalid
+2019-04-30 14:04:51|ERROR|AliyunOss \ uploadFile|"/test.png" object name is invalid
+2019-04-30 14:04:57|ERROR|AliyunOss \ uploadFile|"/test.png" object name is invalid
+2019-04-30 14:05:19|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:05:30|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:05:40|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:09:39|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:09:40|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:09:41|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:09:41|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:09:41|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:09:41|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(48): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:24:27|ERROR|AliyunOss \ uploadFile|"/test.png" object name is invalid
+2019-04-30 14:24:40|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(50): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:25:15|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(50): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:25:25|ERROR|App.Upload.AliUpload|OSS\Core\OssException: "/test.png" object name is invalid in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php:2285
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(2045): OSS\OssClient->authPrecheckObject(Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\aliyuncs\oss-sdk-php\src\OSS\OssClient.php(1180): OSS\OssClient->auth(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\vivlong\phalapi-aliyun-oss\src\Lite.php(50): OSS\OssClient->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Upload.php(92): PhalApi\AliyunOss\Lite->uploadFile('goodtimp-vnote', '/test.png', 'C:\\Users\\87963\\...')
+#4 [internal function]: App\Api\Upload->aliUpload()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-04-30 14:26:00|ERROR|AliyunOss \ uploadFile|"/test.png" object name is invalid
+2019-04-30 14:29:28|ERROR|AliyunOss \ file not exists|{"name":"pan_1920_1080(3).png","type":"image\/png","tmp_name":"C:\\Windows\\phpA817.tmp","error":0,"size":269238}

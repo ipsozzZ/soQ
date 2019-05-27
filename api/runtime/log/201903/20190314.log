@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PHP_EOL
+
+2019-03-14 21:53:12|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/14/avatar.png
+2019-03-14 21:54:57|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/14/avatar.png
+2019-03-14 21:56:41|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/14/966435.png
+2019-03-14 21:56:43|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/14/1163092.png
+2019-03-14 21:56:44|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/14/781190.png
+2019-03-14 21:56:44|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/14/243470.png
+2019-03-14 21:56:44|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/14/657525.png
+2019-03-14 21:57:15|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/14/692309.png

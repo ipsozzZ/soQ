@@ -1,0 +1,131 @@
+2019-03-07 11:21:29|ERROR|App.Collection.Add|PDOException: Unknown column 'MistakeId' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(417): NotORM_Result->query('UPDATE mistake ...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Mistake.php(75): NotORM_Result->update(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Mistake.php(36): App\Model\Mistake->updateMistake(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Collection.php(47): App\Domain\Mistake->updateMistake(Array, '123')
+#4 [internal function]: App\Api\Collection->add()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2019-03-07 11:37:02|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '10', '1')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(42): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(39): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 11:47:12|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '10', '1')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(42): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(39): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 11:47:26|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`, `Id`) VALUES ('1', '10', '1', 1)' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(42): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(39): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 11:49:44|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '10', '1')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(39): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 19:23:51|ERROR|App.Note.NotesByCate|PDOException: Unknown column 'CategoryId' in 'where clause' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM n...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(60): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(21): App\Model\Note->getNotesByCateId('1', 2, '2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(133): App\Domain\Note->getNotesByCateId('1', '2', '2')
+#5 [internal function]: App\Api\Note->notesByCate()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 19:24:54|ERROR|App.Note.NotesByCate|PDOException: Unknown column 'CategoryId' in 'where clause' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM n...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(60): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(21): App\Model\Note->getNotesByCateId('1', 2, '2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(133): App\Domain\Note->getNotesByCateId('1', '2', '2')
+#5 [internal function]: App\Api\Note->notesByCate()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 19:24:56|ERROR|App.Note.NotesByCate|PDOException: Unknown column 'CategoryId' in 'where clause' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM n...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(60): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(21): App\Model\Note->getNotesByCateId('1', 2, '2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(133): App\Domain\Note->getNotesByCateId('1', '2', '2')
+#5 [internal function]: App\Api\Note->notesByCate()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 19:42:40|ERROR|App.Note.NotesByKeys|PDOException: Operand should contain 1 column(s) in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM n...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(68): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(29): App\Model\Note->getNotesByKeywords('1', '\xE4\xB8\x8B\xE9\x9D\xA2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(72): App\Domain\Note->getNotesByKeywords('1', '\xE4\xB8\x8B\xE9\x9D\xA2')
+#5 [internal function]: App\Api\Note->notesByKeys()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 19:43:16|ERROR|App.Note.NotesByKeys|PDOException: Operand should contain 1 column(s) in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM n...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(68): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(29): App\Model\Note->getNotesByKeywords('1', '\xE4\xB8\x8B\xE9\x9D\xA2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(72): App\Domain\Note->getNotesByKeywords('1', '\xE4\xB8\x8B\xE9\x9D\xA2')
+#5 [internal function]: App\Api\Note->notesByKeys()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 19:45:41|ERROR|App.Note.NotesByKeys|PDOException: Operand should contain 1 column(s) in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM n...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(69): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(29): App\Model\Note->getNotesByKeywords('1', '\xE4\xB8\x8B\xE9\x9D\xA2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(72): App\Domain\Note->getNotesByKeywords('1', '\xE4\xB8\x8B\xE9\x9D\xA2')
+#5 [internal function]: App\Api\Note->notesByKeys()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-07 19:53:44|ERROR|App.Note.NotesByKeys|PDOException: Operand should contain 1 column(s) in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM n...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(69): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(29): App\Model\Note->getNotesByKeywords('1', '\xE4\xB8\x8B\xE9\x9D\xA2')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(72): App\Domain\Note->getNotesByKeywords('1', '\xE4\xB8\x8B\xE9\x9D\xA2')
+#5 [internal function]: App\Api\Note->notesByKeys()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}

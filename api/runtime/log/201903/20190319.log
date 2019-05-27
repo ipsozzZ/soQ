@@ -1,0 +1,57 @@
+2019-03-19 10:03:51|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/753038.png
+2019-03-19 10:05:05|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/362384.png
+2019-03-19 10:05:14|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/807813.png
+2019-03-19 10:15:07|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/1000341.png
+2019-03-19 10:36:32|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/1199337.png
+2019-03-19 10:37:00|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/266563.png
+2019-03-19 10:40:46|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/577199.png
+2019-03-19 15:17:47|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '\'\'')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM q...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Match.php(135): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(28): App\Common\Match::GetQuestionsByKeyWord(Array, 6)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(95): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#5 [internal function]: App\Api\Question->search()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-19 15:17:59|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM q...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Match.php(135): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(28): App\Common\Match::GetQuestionsByKeyWord(Array, 6)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(95): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#5 [internal function]: App\Api\Question->search()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-19 15:18:17|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM q...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Match.php(135): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(28): App\Common\Match::GetQuestionsByKeyWord(Array, 6)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(95): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#5 [internal function]: App\Api\Question->search()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-19 16:04:21|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/831307.png
+2019-03-19 16:18:30|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/530081.png
+2019-03-19 19:08:30|ERROR|App.Question.Insert|PDOException: MySQL server has gone away in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO qu...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Question\Basic.php(25): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Upload.php(58): App\Model\Question\Basic->AddQuestion(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(76): App\Domain\Question\Upload->upQuestion(Array)
+#5 [internal function]: App\Api\Question->insert()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-19 21:04:09|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/1165824.jpg
+2019-03-19 21:05:38|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/320245.jpg
+2019-03-19 21:05:54|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/913990.jpg
+2019-03-19 21:06:02|DEBUG|succeed to upload file to PhalApi\UCloud\Engine\Local|http://localhost/phalapi/public/upload/demo/2019/03/19/518829.png

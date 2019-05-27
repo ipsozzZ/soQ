@@ -109,19 +109,30 @@ class Note extends NotORM
      */
     public function getBykeyId($uid,$cid=0,$kid)
     {
-
-        $kid='%,'.$kid.',%';
-        $command = 'select Id,Headline,Content,NoteCategoryId,DateTime,KeyWords from note where UserId=:uid and concat("%,",KeyWords,",%") like :kid';
-       
-        $params = array(
-            ':uid' => $uid,
-            ':kid'=>$kid,
-            );
+        // $params=array();
+        $model=$this->getORM()->where("UserId",$uid);
         if($cid!=0) {
-            $command=$command." and NoteCategoryId = :cid";
-            $params[":cid"]=$cid;
+            $model->where("NoteCategoryId",$cid);
+            // $params[":cid"]=$cid;
+            // array_push($params,$cid);
         }
-        return  $this->getORM()->queryAll($command,$params);    
+        $kid=','.$kid.',';
+        // $command = 'select Id,Headline,Content,NoteCategoryId,DateTime,KeyWords from note where UserId=:uid';
+        for($i=1;$i<strlen($kid);$i++) //统计数量
+        {
+            $t=$i;
+            while($i<strlen($kid)&&$kid[$i]!=","){
+                $i++;
+            }
+            $subtemp=substr($kid,$t,$i-$t);
+            // array_push($params,$subtemp);
+            // $command = $command.' and concat("%,",KeyWords,",%") like ?';
+           
+            $model->where('concat("%,",KeyWords,",%") like ?','%,'.$subtemp.',%');
+        }
+        
+     
+        return  $model->fetchAll();
     }
 
     /* --------------      数据库插入      ----------------- */

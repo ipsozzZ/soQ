@@ -1,0 +1,33 @@
+2019-05-06 15:45:56|ERROR|App.Note.NotesByKeyId|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KeyWords, LIKE ',1,')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(870): NotORM_Result->query('SELECT * FROM n...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(955): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(114): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(55): App\Model\Note->getBykeyId('2', '0', ',1,')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(141): App\Domain\Note->getNotesByKeyId('2', '0', '1')
+#5 [internal function]: App\Api\Note->notesByKeyId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(16): PhalApi\PhalApi->response()
+#8 {main}
+2019-05-06 15:54:57|ERROR|App.Note.NotesByKeyId|PDOException: Unknown column 'UserId' in 'where clause' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(990): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(977): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(122): NotORM_Result->queryAll('select * from k...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(55): App\Model\Note->getBykeyId('2', '0', '%,1%,')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(141): App\Domain\Note->getNotesByKeyId('2', '0', '1')
+#5 [internal function]: App\Api\Note->notesByKeyId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(16): PhalApi\PhalApi->response()
+#8 {main}
+2019-05-06 15:56:42|ERROR|App.Note.NotesByKeyId|PDOException: Unknown column 'UserId' in 'where clause' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(990): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(977): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(122): NotORM_Result->queryAll('select * from k...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(55): App\Model\Note->getBykeyId('2', '0', '%,1%,')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(141): App\Domain\Note->getNotesByKeyId('2', '0', '1')
+#5 [internal function]: App\Api\Note->notesByKeyId()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(16): PhalApi\PhalApi->response()
+#8 {main}

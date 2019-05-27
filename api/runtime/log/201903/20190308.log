@@ -1,0 +1,231 @@
+2019-03-08 19:34:00|ERROR|App.User.Add|PDOException: Unknown column 'School' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO us...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\User.php(83): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\User.php(96): App\Model\User->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\User.php(112): App\Domain\User->add(Array)
+#5 [internal function]: App\Api\User->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:24:02|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(39): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:26:36|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:29:55|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:30:01|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:30:47|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:30:50|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:30:51|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:30:51|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:30:52|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:31:23|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:32:02|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:32:05|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:32:58|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES (1, 1, 0)' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(46): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:35:22|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:37:45|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:40:06|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO li...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:42:55|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[like] (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO [l...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:44:25|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"like" (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '1', '0')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO "l...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 20:44:43|ERROR|App.Like.Add|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"like" (`UserId`, `QuestionId`, `MistakeId`) VALUES ('1', '0', '1')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO "l...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Like.php(41): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Like.php(13): App\Model\Like->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Like.php(40): App\Domain\Like->add(Array, '123')
+#5 [internal function]: App\Api\Like->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-08 21:16:29|ERROR|App.Note.Add|PDOException: Column 'NoteCategoryId' cannot be null in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO no...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Note.php(110): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Note.php(63): App\Model\Note->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Note.php(165): App\Domain\Note->add(Array)
+#5 [internal function]: App\Api\Note->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}

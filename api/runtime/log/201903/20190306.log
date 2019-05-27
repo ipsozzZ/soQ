@@ -1,0 +1,103 @@
+2019-03-06 17:34:51|ERROR|App.Question_CURD.insert|PDOException: MySQL server has gone away in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO qu...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Question\Add.php(25): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Upload.php(58): App\Model\Question\Add->AddQuestion(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question\CURD.php(61): App\Domain\Question\Upload->upQuestion(Array)
+#5 [internal function]: App\Api\Question\CURD->insert()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-06 17:35:12|ERROR|App.Question_CURD.insert|PDOException: MySQL server has gone away in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO qu...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Question\Add.php(25): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Upload.php(58): App\Model\Question\Add->AddQuestion(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question\CURD.php(61): App\Domain\Question\Upload->upQuestion(Array)
+#5 [internal function]: App\Api\Question\CURD->insert()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-06 19:12:42|ERROR|App.Mistake.add|PDOException: Unknown column 'StandTime' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO mi...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Mistake.php(27): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Mistake.php(13): App\Model\Mistake->insertMistake(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Mistake.php(90): App\Domain\Mistake->addMistake(Array)
+#5 [internal function]: App\Api\Mistake->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-06 19:14:02|ERROR|App.Mistake.add|PDOException: Unknown column 'StandTime' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO mi...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Mistake.php(27): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Mistake.php(13): App\Model\Mistake->insertMistake(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Mistake.php(90): App\Domain\Mistake->addMistake(Array)
+#5 [internal function]: App\Api\Mistake->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-06 19:14:52|ERROR|App.Mistake.add|PDOException: Unknown column 'StandTime' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO mi...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Mistake.php(27): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Mistake.php(13): App\Model\Mistake->insertMistake(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Mistake.php(90): App\Domain\Mistake->addMistake(Array)
+#5 [internal function]: App\Api\Mistake->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-06 20:08:14|ERROR|App.Question_CURD.search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search'=> array ' Text'=> arr 'Num'=> arra' like concat('%',Word,'%')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(46): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords(' Id int(1 Categ...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(24): App\Common\Tools::ExtractKeyWords(' Id int(1 Categ...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question\CURD.php(70): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question\CURD->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-06 20:09:46|ERROR|App.Question_CURD.search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search'=> array ' Text'=> arr 'Num'=> arra' like concat('%',Word,'%')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(46): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords(' 'search'=> arr...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(24): App\Common\Tools::ExtractKeyWords(' 'search'=> arr...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question\CURD.php(70): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question\CURD->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-06 20:09:56|ERROR|App.Question_CURD.search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search'=> array ' Text'=> arr 'Num'=> arra Id int(1 Categoryld int(11345731 Cont' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(46): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords(' 'search'=> arr...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(24): App\Common\Tools::ExtractKeyWords(' 'search'=> arr...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question\CURD.php(70): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question\CURD->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-06 20:12:26|ERROR|App.Question_CURD.search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search'=> array ' Text'=> arr 'Num'=> arra Id int(1 Categoryld int(11345731 Cont' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(46): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords(' 'search'=> arr...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(24): App\Common\Tools::ExtractKeyWords(' 'search'=> arr...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question\CURD.php(70): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question\CURD->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}

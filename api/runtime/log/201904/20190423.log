@@ -1,0 +1,20 @@
+2019-04-23 16:33:23|ERROR|App.Userelation.GetListUid|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT * FROM u...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Userelation.php(37): NotORM_Result->queryRows('SELECT * FROM u...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Userelation.php(158): App\Model\Userelation->getByUid('1', 0, '5')
+#3 [internal function]: App\Api\Userelation->getListUid()
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#6 {main}
+2019-04-23 18:31:04|ERROR|App.Userelation.GetUsersById|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[Name],Avatar  from user where '0,7,2,1,' like concat('%,',Id,',%')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select Id,Phone...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select Id,Phone...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\User.php(68): NotORM_Result->queryAll('select Id,Phone...', Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Userelation.php(17): App\Model\User->getUsersByIds('0,7,2,1,')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Userelation.php(188): App\Domain\Userelation->getUserById('4')
+#5 [internal function]: App\Api\Userelation->getUsersById()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}

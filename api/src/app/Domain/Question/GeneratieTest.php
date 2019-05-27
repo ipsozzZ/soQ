@@ -27,9 +27,9 @@ class GeneratieTest
   {
     $ds = new Statistics();
     $keys = $ds->getStatisticsBehavior($uid, $cid, $date); //统计最近用户行为题目的keys
-
-    $mquestion = new ModelSearchQ();
-    $qs = QTools::deleteQuestionsForUser($uid); //去除用户已经操作（收藏、错题整理等）部分
+   
+    // $mquestion = new ModelSearchQ();
+    $qs = QTools::deleteQuestionsForUser($uid,null,$cid); //去除用户已经操作（收藏、错题整理等）部分
     $questions = Match::GetQuestionsByKeyWord($keys, $num, $qs); //关键字匹配相应题目
     return array_slice($questions,0,$num);
   }

@@ -1,0 +1,22 @@
+2019-03-02 18:46:10|ERROR|App.Site.Index|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT * FROM k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT * FROM k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(35): NotORM_Result->queryAll('SELECT * FROM k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Recommend.php(23): App\Model\KeyWord->gesKeyWordsById('4,')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Site.php(34): App\Domain\Question\Recommend->recommend(1)
+#5 [internal function]: App\Api\Site->index()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-02 18:48:02|ERROR|App.Site.Index|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT * FROM k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT * FROM k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(35): NotORM_Result->queryAll('SELECT * FROM k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Recommend.php(24): App\Model\KeyWord->gesKeyWordsById('4,5')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Site.php(34): App\Domain\Question\Recommend->recommend(1)
+#5 [internal function]: App\Api\Site->index()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}

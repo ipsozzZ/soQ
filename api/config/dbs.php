@@ -14,10 +14,10 @@ return array(
     'servers' => array(
         'db_master' => array(                       //服务器标记
             'type'      => 'mysql',                 //数据库类型，暂时只支持：mysql, sqlserver
-            'host'      => '47.107.80.19',             //数据库域名
-            'name'      => 'squestion',               //数据库名字
-            'user'      => '722',                  //数据库用户名
-            'password'  => 'mni722',	                    //数据库密码
+            'host'      => '',             //数据库域名
+            'name'      => '',               //数据库名字
+            'user'      => '',                  //数据库用户名
+            'password'  => '',	                    //数据库密码
             'port'      => 3306,                    //数据库端口
             'charset'   => 'UTF8',                  //数据库字符集
         ),

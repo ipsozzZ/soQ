@@ -182,7 +182,7 @@ class Note {
 			$km=new ModelKeyWord();
 			$data=$km->gesKeyWordsByIds($temp);// 获取所有的keys
 		
-			$cnt=0;
+			$cnt=0;$tempj=false;
 			for($i=1;$i<strlen($temp);$i++) //统计数量
 			{
 				$t=$i;
@@ -218,10 +218,10 @@ class Note {
 				$data[$j]["Weight"]=$data[$j]["Count"]*$data[$j]["Weight"];
 			}
 			// Tools::SortByKey($data,"Count",false);
-	
+			
 			$data=Tools::GetMaxArray($data,"Weight",$num); 
 			Tools::unsetKeys($data,"Weight");
-			array_unshift($data,$tempj); //push_front 
+			if($tempj!==false) array_unshift($data,$tempj); //push_front 
 			return $data;
 		}
 

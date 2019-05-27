@@ -1,0 +1,156 @@
+2019-03-13 13:14:39|ERROR|App.Question.Insert|PDOException: Column 'CategoryId' cannot be null in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO qu...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Question\Basic.php(25): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Upload.php(58): App\Model\Question\Basic->AddQuestion(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(66): App\Domain\Question\Upload->upQuestion(Array)
+#5 [internal function]: App\Api\Question->insert()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-13 13:38:28|ERROR|App.Question.GetById|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT * FROM k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT * FROM k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(35): NotORM_Result->queryAll('SELECT * FROM k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\QTools.php(63): App\Model\KeyWord->gesKeyWordsByIds('')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(41): App\Domain\Question\QTools::getQuestionViewById('24', '1')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(101): App\Domain\Question\Basic::findQuestionById('24', '1')
+#6 [internal function]: App\Api\Question->getById()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 13:39:20|ERROR|App.Question.GetById|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT * FROM k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT * FROM k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(35): NotORM_Result->queryAll('SELECT * FROM k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\QTools.php(63): App\Model\KeyWord->gesKeyWordsByIds('')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(41): App\Domain\Question\QTools::getQuestionViewById('24', '1')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(101): App\Domain\Question\Basic::findQuestionById('24', '1')
+#6 [internal function]: App\Api\Question->getById()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:23:56|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用' like conca' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(48): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:24:02|ERROR|App.Question.Insert|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'P& ^# d* B/ G4 b1 d- [7 ]6 I D．无法比较密度大小% [) b5 C- M2 f( I 
+' l' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(48): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\n \xE5\xA6\x82\xE5\x9B\xBE\xE6\x89\x80\xE7\xA4\xBA\xE6...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Upload.php(33): App\Common\Tools::ExtractKeyWords('\n \xE5\xA6\x82\xE5\x9B\xBE\xE6\x89\x80\xE7\xA4\xBA\xE6...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(66): App\Domain\Question\Upload->upQuestion(Array)
+#6 [internal function]: App\Api\Question->insert()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:27:05|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用' like conca' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(48): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE8\xA5\xBF\xE5\xB0\xBC\xE7\x89\x9B(E)\xE7\xBC\x96...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE8\xA5\xBF\xE5\xB0\xBC\xE7\x89\x9B(E)\xE7\xBC\x96...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:27:23|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用' like conca' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(48): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:29:28|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用' like conca' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(49): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:33:37|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用' like conca' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(49): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:34:13|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用西尼' like' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(49): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:34:19|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用' like conca' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(49): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:35:09|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用' like conca' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(49): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-13 15:35:15|ERROR|App.Question.Search|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')b assetsV App. vueexporcameraTakepicture暴露出来供其他调用' like conca' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('select * from k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('select * from k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(49): NotORM_Result->queryAll('select * from k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Common\Tools.php(24): App\Model\KeyWord->gesKeyWordsByWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(25): App\Common\Tools::ExtractKeyWords('\xE7\x89\x9B(E)\xE7\xBC\x96\xE8\xBE\x91(\xE9\x80...')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::searchQuestion(Array, 3)
+#6 [internal function]: App\Api\Question->search()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}

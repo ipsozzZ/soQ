@@ -30,9 +30,9 @@ return array(
      * 阿里云OSS相关配置
      */
     'AliyunOss' =>  array(
-			'accessKeyId'       => 'LTAIAwKsy5TDGpeA',
-			'accessKeySecret'   => 'joaAXZGY2Kl0XLcAU3qxrR4mTfmD62',
-			'bucket'            => 'goodtimp-vnote',
+			'accessKeyId'       => '',
+			'accessKeySecret'   => '',
+			'bucket'            => '',
 			'endpoint'          => 'oss-cn-hangzhou.aliyuncs.com',
 			'isCName'           => false,
 			'securityToken'     => null,

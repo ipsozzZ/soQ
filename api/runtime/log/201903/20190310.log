@@ -1,0 +1,10 @@
+2019-03-10 19:04:45|ERROR|App.User.Update|PDOException: Unknown column 'School' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(417): NotORM_Result->query('UPDATE user SET...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\User.php(95): NotORM_Result->update(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\User.php(211): App\Model\User->updateOne(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\User.php(137): App\Domain\User->updateUser(Array)
+#4 [internal function]: App\Api\User->update()
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#7 {main}

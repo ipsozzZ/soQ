@@ -1,0 +1,123 @@
+2019-03-09 14:57:38|ERROR|App.Collection.All|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM c...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Collection.php(41): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Collection.php(73): App\Model\Collection->getCollectionsByUserId('1', -5, '5')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Collection.php(76): App\Domain\Collection->getAllByUserId('1', '', '5')
+#5 [internal function]: App\Api\Collection->all()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-09 14:58:15|ERROR|App.Collection.All|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM c...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Collection.php(41): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Collection.php(73): App\Model\Collection->getCollectionsByUserId('1', -5, '5')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Collection.php(76): App\Domain\Collection->getAllByUserId('1', '', '5')
+#5 [internal function]: App\Api\Collection->all()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-09 14:59:10|ERROR|App.Collection.All|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(818): NotORM_Result->query('SELECT * FROM c...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(903): NotORM_Result->execute()
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Collection.php(41): NotORM_Result->fetchAll()
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Collection.php(73): App\Model\Collection->getCollectionsByUserId('1', -5, '5')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Collection.php(76): App\Domain\Collection->getAllByUserId('1', '', '5')
+#5 [internal function]: App\Api\Collection->all()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-09 15:26:43|ERROR|App.Question.GetById|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT * FROM k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT * FROM k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(35): NotORM_Result->queryAll('SELECT * FROM k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\QTools.php(63): App\Model\KeyWord->gesKeyWordsByIds('')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(40): App\Domain\Question\QTools::getQuestionViewById('20', '1')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::findQuestionById('20', '1')
+#6 [internal function]: App\Api\Question->getById()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-09 15:26:44|ERROR|App.Question.GetById|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(938): NotORM_Result->query('SELECT * FROM k...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(925): NotORM_Result->queryRows('SELECT * FROM k...', Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\KeyWord.php(35): NotORM_Result->queryAll('SELECT * FROM k...')
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\QTools.php(63): App\Model\KeyWord->gesKeyWordsByIds('')
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\Question\Basic.php(40): App\Domain\Question\QTools::getQuestionViewById('20', '1')
+#5 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\Question.php(90): App\Domain\Question\Basic::findQuestionById('20', '1')
+#6 [internal function]: App\Api\Question->getById()
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#8 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#9 {main}
+2019-03-09 20:39:33|ERROR|App.User.Add|PDOException: Column 'Occupation' cannot be null in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO us...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\User.php(85): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\User.php(97): App\Model\User->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\User.php(112): App\Domain\User->add(Array)
+#5 [internal function]: App\Api\User->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-09 20:40:58|ERROR|App.User.Add|PDOException: Column 'Occupation' cannot be null in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO us...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\User.php(85): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\User.php(97): App\Model\User->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\User.php(112): App\Domain\User->add(Array)
+#5 [internal function]: App\Api\User->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-09 20:42:03|ERROR|App.User.Add|PDOException: Column 'Occupation' cannot be null in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO us...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\User.php(85): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\User.php(97): App\Model\User->insertOne(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\User.php(112): App\Domain\User->add(Array)
+#5 [internal function]: App\Api\User->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-09 20:42:30|ERROR|App.User.Add|PDOException: Unknown column 'Into' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO no...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notecategory.php(37): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\User.php(105): App\Model\Notecategory->addCategory(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\User.php(112): App\Domain\User->add(Array)
+#5 [internal function]: App\Api\User->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-09 20:44:52|ERROR|App.User.Add|PDOException: Operand should contain 1 column(s) in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO no...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notecategory.php(37): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\User.php(105): App\Model\Notecategory->addCategory(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\User.php(112): App\Domain\User->add(Array)
+#5 [internal function]: App\Api\User->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2019-03-09 20:45:11|ERROR|App.User.Add|PDOException: Unknown column 'Into' in 'field list' in E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php:264
+Stack trace:
+#0 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(346): NotORM_Result->query('INSERT  INTO no...', Array)
+#1 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\notorm\src\NotORM\Result.php(363): NotORM_Result->insert_multi(Array)
+#2 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Model\Notecategory.php(37): NotORM_Result->insert(Array)
+#3 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Domain\User.php(105): App\Model\Notecategory->addCategory(Array)
+#4 E:\phpstudy\PHPTutorial\WWW\soQ\api\src\app\Api\User.php(112): App\Domain\User->add(Array)
+#5 [internal function]: App\Api\User->add()
+#6 E:\phpstudy\PHPTutorial\WWW\soQ\api\vendor\phalapi\kernal\src\PhalApi.php(53): call_user_func(Array)
+#7 E:\phpstudy\PHPTutorial\WWW\soQ\api\public\index.php(9): PhalApi\PhalApi->response()
+#8 {main}
